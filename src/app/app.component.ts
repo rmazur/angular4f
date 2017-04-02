@@ -28,7 +28,7 @@ export class AppComponent {
       }
     });
 
-    this.http.get('../assets/data/data.json')
+    this.http.get('./data.json')
       .map(response => response.json().screenshots)
       .subscribe(res => this.spaceScreens = res);
   }
