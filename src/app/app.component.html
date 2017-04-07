@@ -68,9 +68,7 @@
     </div>
   </md-tab>
 </md-tab-group>
-
 <br>
-
 <div class="row columns">
   <button (click)="login()" *ngIf="!name">Anonymous Login</button>
 
@@ -79,4 +77,12 @@
   <div id="details-container">
     <p *ngFor="let item of items | async"><img src="../assets/images/pin.svg">{{item.message}}</p>
   </div>
+</div>
+<hr>
+<md-toolbar>
+  <a routerLink="/article" routerLinkActive="active">Click here to see all already published articles in Drupal 8!</a>
+</md-toolbar>
+<br>
+<div id="wrapper">
+  <router-outlet></router-outlet>
 </div>

@@ -44,3 +44,7 @@ label {
 #page-padding {
     padding: 0 1.5em 1.5em 1.5em;
 }
+
+.example-card {
+  width: 400px;
+}
