@@ -1,13 +1,21 @@
 <md-card *ngFor="let post of posts">
   <md-card-content>
-      <p>{{ post.created[0].value * 1000 | date:'medium' }}</p>
-      <p>{{ post.title[0].value }}</p>
+      <!-- <p>{{ post.created[0].value * 1000 | date:'medium' }}</p>
+      <p>{{ post.title[0].value }}</p> -->
+      <p>{{ post.Changed }} - {{ post.Author }}</p>
+      <p>{{ post.Title }}</p>
   </md-card-content>
   <br>
-  <md-card-content class="example-card" *ngIf="post.field_image.length">
+  <!-- <md-card-content class="example-card" *ngIf="post.field_image.length">
       <img md-card-image [src]="post.field_image[0].url" alt="{{ post.field_image[0].alt }}">
   </md-card-content>
   <md-card-content>
       <div [innerHTML]="post.body[0].value"></div>
+  </md-card-content> -->
+  <md-card-content class="example-card" *ngIf="post.Image !=''">
+      <img md-card-image [src]="post.Image">
+  </md-card-content>
+  <md-card-content>
+      <div [innerHTML]="post.Body"></div>
   </md-card-content>
 </md-card>

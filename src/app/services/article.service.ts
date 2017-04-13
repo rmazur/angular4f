@@ -9,7 +9,7 @@ export class ArticleService {
 
   getPosts(): Observable<any> {
 
-    return this.appService.get('/test').map(res => res.json()).catch(err => Observable.throw(err));
+    return this.appService.get('/test1').map(res => res.json()).catch(err => Observable.throw(err));
   }
 
 }
