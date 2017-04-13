@@ -48,3 +48,16 @@ label {
 .example-card {
   width: 400px;
 }
+
+.buttonText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px;
+  white-space: nowrap;
+}
+
+.buttonText:hover {
+  overflow: auto;
+  text-overflow: none;
+  white-space: normal;
+}
