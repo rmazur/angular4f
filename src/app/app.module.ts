@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
@@ -49,7 +50,7 @@ export const firebaseconfig = {
     MaterialModule.forRoot(),
     BrowserAnimationsModule
   ],
-  providers: [AppService, ArticleService],
+  providers: [AppService, ArticleService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
