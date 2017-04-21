@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import {AgGridModule} from 'ag-grid-angular/main';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -49,6 +50,7 @@ export const firebaseconfig = {
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    FlexLayoutModule,
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(firebaseconfig),
