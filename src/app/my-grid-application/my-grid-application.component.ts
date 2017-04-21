@@ -8,7 +8,7 @@ import {RedComponentComponent} from '../red-component/red-component.component';
   styleUrls: ['./my-grid-application.component.css']
 })
 export class MyGridApplicationComponent implements OnInit {
-  private gridOptions: GridOptions;
+  gridOptions: GridOptions;
 
   constructor() {
     this.gridOptions = {};
