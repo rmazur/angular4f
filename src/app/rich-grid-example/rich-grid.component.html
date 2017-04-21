@@ -4,6 +4,7 @@
         <span><md-icon>mood</md-icon></span>
             <span>Rich Grid Example</span>
     </md-toolbar>
+    <hr>
     <div style="padding: 4px;">
         <div style="float: right;">
             <input (keyup)="onQuickFilterChanged($event)" type="text" id="quickFilterInput" placeholder="Type text to filter..."/>
@@ -16,6 +17,8 @@
         </div>
     </div>
     <div style="clear: both;"></div>
+    
+    <hr>
 
     <div *ngIf="showGrid">
 
@@ -28,6 +31,7 @@
                 <button md-raised-button color="warn" (click)="agGrid.api.selectAll()">Select All</button>
                 <button md-raised-button color="warn" (click)="agGrid.api.deselectAll()">Clear Selection</button>
             </span>
+            <hr>
             <span style="margin-left: 20px;">
                 Column API:
                 <button md-raised-button color="accent" (click)="agGrid.columnApi.setColumnVisible('country', false)">Hide Country Column</button>
@@ -35,6 +39,7 @@
             </span>
         </div>
         <div style="clear: both;"></div>
+        <hr>
         <div style="padding: 4px;" class="toolbar">
             <!-- <label>
                 <input type="checkbox" (change)="showToolPanel=$event.target.checked"/>
