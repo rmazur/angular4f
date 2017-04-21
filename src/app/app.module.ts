@@ -17,7 +17,7 @@ import { ArticleComponent } from './article/article.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 // import { MyGridApplicationComponent } from './my-grid-application/my-grid-application.component';
-import { RedComponentComponent } from './red-component/red-component.component';
+// import { RedComponentComponent } from './red-component/red-component.component';
 import {RichGridComponent} from './rich-grid-example/rich-grid.component';
 import {DateComponent} from './date-component/date.component';
 import {HeaderComponent} from './header-component/header.component';
