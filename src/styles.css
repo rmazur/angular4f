@@ -63,3 +63,8 @@ label {
   text-overflow: none;
   white-space: normal;
 }
+
+md-toolbar-row {
+  text-align: center;
+  justify-content: space-between;
+}

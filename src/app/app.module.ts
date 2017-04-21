@@ -18,6 +18,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomeComponent } from './home/home.component';
 import { MyGridApplicationComponent } from './my-grid-application/my-grid-application.component';
 import { RedComponentComponent } from './red-component/red-component.component';
+import {RichGridComponent} from './rich-grid-example/rich-grid.component';
+import {DateComponent} from './date-component/date.component';
+import {HeaderComponent} from './header-component/header.component';
+import {HeaderGroupComponent} from './header-group-component/header-group.component';
 
 const appRoutes: Routes = [
   { path: 'article', component: ArticleComponent },
@@ -44,8 +48,10 @@ export const firebaseconfig = {
     ArticleComponent,
     PageNotFoundComponent,
     HomeComponent,
-    MyGridApplicationComponent,
-    RedComponentComponent
+    RichGridComponent,
+    DateComponent,
+    HeaderComponent,
+    HeaderGroupComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -57,7 +63,11 @@ export const firebaseconfig = {
     MaterialModule.forRoot(),
     BrowserAnimationsModule,
     AgGridModule.withComponents(
-            [RedComponentComponent]
+            [
+              DateComponent,
+              HeaderComponent,
+              HeaderGroupComponent
+            ]
         )
   ],
   providers: [AppService, ArticleService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
