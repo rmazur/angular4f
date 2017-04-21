@@ -1,4 +1,4 @@
-# Angular 4 + Firebase + Material 2 + Drupal REST Headless
+# Angular 4 (flex-layout) + Firebase + Material 2 + ag-grid + Drupal REST Headless
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
