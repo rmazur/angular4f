@@ -79,10 +79,22 @@
   </div>
 </div>
 <hr>
-  <button routerLink="/article" class="buttonText">
+<div layout="row" layout-align="center center">
+  <md-card>
+    <md-card-header>
+      <md-card-title>Table example</md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <!-- <app-my-grid-application></app-my-grid-application> -->
+      Hello!!
+    </md-card-content>
+  </md-card>
+</div>
+<hr>
+<button routerLink="/article" class="buttonText">
     Click here to see all already published articles in Drupal 8!
-  </button>
-  <!-- <a routerLink="/article" routerLinkActive="active">Click hereto see all already published articles in Drupal 8!</a>-->
+</button>
+<!-- <a routerLink="/article" routerLinkActive="active">Click hereto see all already published articles in Drupal 8!</a>-->
 <br>
 <div id="wrapper">
   <router-outlet></router-outlet>
