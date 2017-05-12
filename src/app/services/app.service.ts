@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Rx';
 @Injectable()
 export class AppService {
 
-private serverURL = 'http://13.69.72.189/api';
+private serverURL = 'http://13.69.79.111/api';
 private headers: Headers = new Headers(
   {
     'Content-Type': 'application/hal+json'
