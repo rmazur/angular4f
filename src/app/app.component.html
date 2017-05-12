@@ -71,13 +71,14 @@
 <br>
 <div class="row columns">
   <button (click)="login()" *ngIf="!name">Anonymous Login</button>
-
+  </div>
+  <div class="row columns">
   <input type="text" id="message" *ngIf="name" placeholder="What is it that you do?" (keyup.enter)="Send($event.target.value)"
     [(ngModel)]="msgVal" />
+  </div>
   <div id="details-container">
     <p *ngFor="let item of items | async"><img src="../assets/images/pin.svg">{{item.message}}</p>
   </div>
-</div>
 <hr>
 <md-card>
   <div fxLayout="row" fxLayoutAlign="center center">
